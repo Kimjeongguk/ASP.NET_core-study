@@ -1,0 +1,19 @@
+﻿@model StudentTeacherViewModel
+<h3>Our Teachers</h3>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teacher in Model.Teachers)
+        {
+            <tr>
+                <td>@teacher.Name</td>
+                <td>@teacher.Class</td>
+            </tr>
+        }
+    </tbody>
+</table>
